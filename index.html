@@ -5,22 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
     <style>
-        @media (min-width:600px) {
-            body{
-                background-color: yellow;
-            }
+       *{
+           margin: 0;
+           padding: 0;
+       }
+        body {
+            font-family: "open sans";
+            font-size: 14px;
         }
-        @media (max-width:599px) {
-            body{
-                background-color: violet;
-            }
+        . container{
+            width: 500px;
+            margin: 25px auto;
         }
-        h1{
-            background-color:green;
+        form{
+            padding: 20px;
+            background: #2c3e50;
+            color:#fff;
+            -moz-border-radius:4px;
+            -webkit-border-radius:4px;
+        } 
+        form label, from input, form button{
+            border: 0em;
+            margin-bottom:3px;
+            display: block;
+            width: 100%;
+        }
+        form input{
+            height:25px;
+            line-height:25px;
+            background:#fff;
+            padding:0;
+        }
+        form button{
+            height: 30px;
+            line-height:30px;
+            background:#e67e22;
+            color:#fff;
+            margin-top: 10px;
+            cursor: ponter;
+        }
+        form . error{
+            color: #ff0000;
         }
     </style>
 </head>
 <body>
-    <h1 align="center;">Welcome to my web page</h1>
+    <div class="container">
+        <h2>Registration </h2>
+        <form action="" name="registration">
+            <label for="fname">First Name</label>
+            <input type="firstname" id="firstname" placeholder="niima">
+            <label for="lname">Last Name</label>
+            <input type="lastname" id="lastname" placeholder="hussaini">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="niimahussain@gmail.com">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="&#9679;">
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </body>
 </html>
